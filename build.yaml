@@ -19,7 +19,7 @@
 #
 ---
 include:
+  - board: nice_nano_v2  # or your specific board
+    shield: redox_right  # Make right the central
   - board: nice_nano_v2
-    shield: redox_left
-  - board: nice_nano_v2
-    shield: redox_right
+    shield: redox_left   # Make left the peripheral
