@@ -19,7 +19,11 @@
 #
 ---
 include:
-  - board: nice_nano_v2  # or your specific board
-    shield: redox_right  # Make right the central
   - board: nice_nano_v2
     shield: redox_left   # Make left the peripheral
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2  # or your specific board
+    shield: redox_right  # Make right the central
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
